@@ -8,11 +8,13 @@
 
 import UIKit
 
-class DetailViewController : UIViewController {
+class DetailViewController : UIViewController, UIWebViewDelegate {
     
     @IBOutlet var navibar: UINavigationItem!
     
     @IBOutlet var wv: UIWebView!
+    
+    @IBOutlet var spinner: UIActivityIndicatorView!
     
     // 목록에서 넘겨주는 영화 데이터를 받을 변수
     var mvo : MovieVO? = nil
@@ -56,6 +58,27 @@ class DetailViewController : UIViewController {
             self.presentViewController(alert, animated: true, completion: nil)
         }
         
+    }
+    
+    func webViewDidStartLoad(webView: UIWebView) {
+        self.spinner.startAnimating()
+    }
+    
+    func webViewDidFinishLoad(webView: UIWebView) {
+        self.spinner.stopAnimating()
+    }
+    
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
+        self.spinner.stopAnimating()
+        
+        let alert = UIAlertController(title: "error", message: "상세페이지를 읽어오지 못했습니다.", preferredStyle: .Alert)
+        let cancelAction = UIAlertAction(title: "confirm", style: .Cancel){
+            (_) in
+            self.navigationController?.popViewControllerAnimated(true)
+        }
+        
+        alert.addAction(cancelAction)
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
 }
