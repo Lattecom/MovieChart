@@ -46,7 +46,6 @@ class ListViewController : UITableViewController {
         cell.rating?.text = "\(row.rating!)"
         
         dispatch_async(dispatch_get_main_queue(), {
-            NSLog("hello")
             cell.thumbnail?.image = self.getThumbnailImage(indexPath.row)
         })
         
@@ -111,6 +110,17 @@ class ListViewController : UITableViewController {
         } else {
             mvo.thumbnailImage = UIImage(data: NSData(contentsOfURL: NSURL(string: mvo.thumbnail!)!)!)
             return mvo.thumbnailImage!
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "segue_detail") {
+            // 세그웨이를 실행한 sender 인자값을 이용하여 사용자가 클릭한 행 정보를 얻는다.
+            let path = self.movieTable.indexPathForCell(sender as! MovieCell)
+            
+            // 행 정보를 이용하여 사용자가 선택한 영화 데이터를 찾은 다음,
+            // 목적지 뷰 컨트롤러의 mvo 변수에 연결해준다.
+            (segue.destinationViewController as? DetailViewController)?.mvo = self.list[path!.row]
         }
     }
 }

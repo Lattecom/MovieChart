@@ -70,6 +70,7 @@
                                     <outlet property="rating" destination="5ZH-BJ-eoO" id="ONT-1t-o8G"/>
                                     <outlet property="thumbnail" destination="brP-Qt-6MH" id="VoC-tX-6rp"/>
                                     <outlet property="title" destination="e99-FO-8ga" id="gKM-Wg-S8G"/>
+                                    <segue destination="Knn-ca-jcE" kind="show" identifier="segue_detail" id="dnL-Vn-KPR"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -88,6 +89,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FO2-WO-d3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1215" y="313"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="Eur-gG-Dmf">
+            <objects>
+                <viewController id="Knn-ca-jcE" customClass="DetailViewController" customModule="MyMovieChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EYv-3L-edy"/>
+                        <viewControllerLayoutGuide type="bottom" id="KNx-UR-gok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="COQ-YE-ppc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hK-d1-E7n">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="cDY-kB-jPU"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="navibar" destination="cDY-kB-jPU" id="olr-4O-adD"/>
+                        <outlet property="wv" destination="8hK-d1-E7n" id="EK1-qP-bY3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJb-hD-nGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="306"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="m4d-zR-iMR">
