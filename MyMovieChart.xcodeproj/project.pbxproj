@@ -21,6 +21,10 @@
 		E63D29BF1D08B47100A05A2A /* darkknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E63D29BC1D08B47100A05A2A /* darkknight.jpg */; };
 		E63D29C01D08B47100A05A2A /* thor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E63D29BD1D08B47100A05A2A /* thor.jpg */; };
 		E63D29FC1D0DD10F00A05A2A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D29FB1D0DD10F00A05A2A /* DetailViewController.swift */; };
+		E63D29FF1D0DEE5600A05A2A /* Listbullets.png in Resources */ = {isa = PBXBuildFile; fileRef = E63D29FD1D0DEE5600A05A2A /* Listbullets.png */; };
+		E63D2A001D0DEE5600A05A2A /* Trailer.png in Resources */ = {isa = PBXBuildFile; fileRef = E63D29FE1D0DEE5600A05A2A /* Trailer.png */; };
+		E63D2A021D0E72BD00A05A2A /* TheaterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D2A011D0E72BD00A05A2A /* TheaterCell.swift */; };
+		E63D2A041D0E744700A05A2A /* TheaterListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D2A031D0E744700A05A2A /* TheaterListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		E63D29BC1D08B47100A05A2A /* darkknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkknight.jpg; sourceTree = "<group>"; };
 		E63D29BD1D08B47100A05A2A /* thor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thor.jpg; sourceTree = "<group>"; };
 		E63D29FB1D0DD10F00A05A2A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E63D29FD1D0DEE5600A05A2A /* Listbullets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Listbullets.png; sourceTree = "<group>"; };
+		E63D29FE1D0DEE5600A05A2A /* Trailer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trailer.png; sourceTree = "<group>"; };
+		E63D2A011D0E72BD00A05A2A /* TheaterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheaterCell.swift; sourceTree = "<group>"; };
+		E63D2A031D0E744700A05A2A /* TheaterListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheaterListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +126,9 @@
 				E63D29B61D080B2C00A05A2A /* MovieVO.swift */,
 				E63D29B41D08089400A05A2A /* ListViewController.swift */,
 				E63D29FB1D0DD10F00A05A2A /* DetailViewController.swift */,
+				E63D2A031D0E744700A05A2A /* TheaterListController.swift */,
 				E63D29B81D08A8B400A05A2A /* MovieCell.swift */,
+				E63D2A011D0E72BD00A05A2A /* TheaterCell.swift */,
 				E63D298D1D0806B100A05A2A /* Assets.xcassets */,
 				E63D298F1D0806B100A05A2A /* LaunchScreen.storyboard */,
 				E63D29921D0806B100A05A2A /* Info.plist */,
@@ -147,6 +157,8 @@
 		E63D29BA1D08AB8C00A05A2A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E63D29FD1D0DEE5600A05A2A /* Listbullets.png */,
+				E63D29FE1D0DEE5600A05A2A /* Trailer.png */,
 				E63D29BB1D08B47100A05A2A /* avengers.jpg */,
 				E63D29BC1D08B47100A05A2A /* darkknight.jpg */,
 				E63D29BD1D08B47100A05A2A /* thor.jpg */,
@@ -261,6 +273,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E63D29FF1D0DEE5600A05A2A /* Listbullets.png in Resources */,
+				E63D2A001D0DEE5600A05A2A /* Trailer.png in Resources */,
 				E63D29BF1D08B47100A05A2A /* darkknight.jpg in Resources */,
 				E63D29911D0806B100A05A2A /* LaunchScreen.storyboard in Resources */,
 				E63D298E1D0806B100A05A2A /* Assets.xcassets in Resources */,
@@ -292,7 +306,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E63D29891D0806B100A05A2A /* ViewController.swift in Sources */,
+				E63D2A021D0E72BD00A05A2A /* TheaterCell.swift in Sources */,
 				E63D29B71D080B2C00A05A2A /* MovieVO.swift in Sources */,
+				E63D2A041D0E744700A05A2A /* TheaterListController.swift in Sources */,
 				E63D29871D0806B100A05A2A /* AppDelegate.swift in Sources */,
 				E63D29FC1D0DD10F00A05A2A /* DetailViewController.swift in Sources */,
 				E63D29B91D08A8B400A05A2A /* MovieCell.swift in Sources */,
