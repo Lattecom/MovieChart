@@ -187,6 +187,7 @@
                                     <outlet property="addr" destination="O1P-2B-mJD" id="bWC-yP-qrQ"/>
                                     <outlet property="name" destination="kFx-cb-sFS" id="Lkg-ru-QgV"/>
                                     <outlet property="tel" destination="FkF-v7-qyM" id="qs0-oa-F7Z"/>
+                                    <segue destination="0aT-IQ-gle" kind="show" identifier="segue_map" id="g3h-JB-a3U"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -197,10 +198,42 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="영화관 정보" id="ErR-N8-jx9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="theaterTable" destination="mAw-qk-2RC" id="eCC-kV-Udz"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4u-Un-Ld7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2027" y="1209"/>
+        </scene>
+        <!--영화관 정보-->
+        <scene sceneID="SWU-Hm-uyG">
+            <objects>
+                <viewController id="0aT-IQ-gle" customClass="TheaterViewController" customModule="MyMovieChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lWs-Sq-HqO"/>
+                        <viewControllerLayoutGuide type="bottom" id="lrY-Db-Vt3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Rs-Eu-i0g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5VI-oh-vTD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="영화관 정보" id="ZUE-UE-YSS"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="map" destination="5VI-oh-vTD" id="NHq-xM-hZd"/>
+                        <outlet property="navibar" destination="ZUE-UE-YSS" id="EUX-qy-LyP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rkb-aj-Zoz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2487" y="1209"/>
         </scene>
         <!--영화관-->
         <scene sceneID="jIO-fc-wf7">

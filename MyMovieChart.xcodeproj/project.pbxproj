@@ -25,6 +25,8 @@
 		E63D2A001D0DEE5600A05A2A /* Trailer.png in Resources */ = {isa = PBXBuildFile; fileRef = E63D29FE1D0DEE5600A05A2A /* Trailer.png */; };
 		E63D2A021D0E72BD00A05A2A /* TheaterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D2A011D0E72BD00A05A2A /* TheaterCell.swift */; };
 		E63D2A041D0E744700A05A2A /* TheaterListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D2A031D0E744700A05A2A /* TheaterListController.swift */; };
+		E63D2A061D0EAE3800A05A2A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63D2A051D0EAE3700A05A2A /* MapKit.framework */; };
+		E63D2A081D0EB1C400A05A2A /* TheaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D2A071D0EB1C400A05A2A /* TheaterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		E63D29FE1D0DEE5600A05A2A /* Trailer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trailer.png; sourceTree = "<group>"; };
 		E63D2A011D0E72BD00A05A2A /* TheaterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheaterCell.swift; sourceTree = "<group>"; };
 		E63D2A031D0E744700A05A2A /* TheaterListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheaterListController.swift; sourceTree = "<group>"; };
+		E63D2A051D0EAE3700A05A2A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E63D2A071D0EB1C400A05A2A /* TheaterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheaterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E63D2A061D0EAE3800A05A2A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +104,7 @@
 		E63D297A1D0806B100A05A2A = {
 			isa = PBXGroup;
 			children = (
+				E63D2A051D0EAE3700A05A2A /* MapKit.framework */,
 				E63D29851D0806B100A05A2A /* MyMovieChart */,
 				E63D299A1D0806B200A05A2A /* MyMovieChartTests */,
 				E63D29A51D0806B200A05A2A /* MyMovieChartUITests */,
@@ -127,6 +133,7 @@
 				E63D29B41D08089400A05A2A /* ListViewController.swift */,
 				E63D29FB1D0DD10F00A05A2A /* DetailViewController.swift */,
 				E63D2A031D0E744700A05A2A /* TheaterListController.swift */,
+				E63D2A071D0EB1C400A05A2A /* TheaterViewController.swift */,
 				E63D29B81D08A8B400A05A2A /* MovieCell.swift */,
 				E63D2A011D0E72BD00A05A2A /* TheaterCell.swift */,
 				E63D298D1D0806B100A05A2A /* Assets.xcassets */,
@@ -311,6 +318,7 @@
 				E63D2A041D0E744700A05A2A /* TheaterListController.swift in Sources */,
 				E63D29871D0806B100A05A2A /* AppDelegate.swift in Sources */,
 				E63D29FC1D0DD10F00A05A2A /* DetailViewController.swift in Sources */,
+				E63D2A081D0EB1C400A05A2A /* TheaterViewController.swift in Sources */,
 				E63D29B91D08A8B400A05A2A /* MovieCell.swift in Sources */,
 				E63D29B51D08089400A05A2A /* ListViewController.swift in Sources */,
 			);

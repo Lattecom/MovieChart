@@ -16,6 +16,19 @@ class TheaterListController: UITableViewController {
     // 읽어올 데이터의 시작위치
     var startPoint = 0
     
+    // 테이블 뷰에 대한 IBOutlet 변수
+    @IBOutlet var theaterTable: UITableView!
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if (segue.identifier == "segue_map") {
+            let path = self.theaterTable.indexPathForCell(sender as! UITableViewCell)
+            let data = self.list[path!.row]
+            
+            (segue.destinationViewController as? TheaterViewController)?.param = data
+        }
+    }
+    
     override func viewDidLoad() {
         self.callTheaterAPI()
     }
