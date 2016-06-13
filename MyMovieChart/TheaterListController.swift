@@ -20,6 +20,25 @@ class TheaterListController: UITableViewController {
         self.callTheaterAPI()
     }
     
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.list.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        // self.list 배열에서 행에 맞는 데이터를 꺼냄
+        let obj = self.list[indexPath.row]
+        
+        // 재사용 큐로부터 tCell 식별자에 맞는 셀 객체를 전달받음
+        let cell = tableView.dequeueReusableCellWithIdentifier("tCell") as! TheaterCell
+        
+        cell.name?.text = obj["상영관명"] as? String
+        cell.tel?.text = obj["연락처"] as? String
+        cell.addr.text = obj["소재지도로명주소"] as? String
+        
+        return cell
+    }
+    
     func callTheaterAPI() {
         // URL 및 인자값을 위한 변수를 선언
         let apiURL = "http://115.68.183.178:2029/theater/list"
